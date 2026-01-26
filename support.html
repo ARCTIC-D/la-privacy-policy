@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 线性代数助手</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            color: #0A0A0A;
+            background: #FAFAFA;
+            padding: 24px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 48px;
+            border-radius: 12px;
+            border: 1px solid #E0E0E0;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #2962FF;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #616161;
+            margin-bottom: 32px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #0A0A0A;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #0A0A0A;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: #0A0A0A;
+        }
+        
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        
+        .feature-card {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2962FF;
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #2962FF;
+        }
+        
+        .faq-item {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .faq-item h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #0A0A0A;
+        }
+        
+        .contact-box {
+            background: #EEF2FF;
+            padding: 24px;
+            border-radius: 8px;
+            border-left: 4px solid #2962FF;
+            margin: 24px 0;
+        }
+        
+        .contact-box h3 {
+            margin-top: 0;
+            color: #2962FF;
+        }
+        
+        .email-link {
+            color: #2962FF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .version-info {
+            background: #F5F5F5;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #E0E0E0;
+            text-align: center;
+            color: #9E9E9E;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>技术支持</h1>
+        <p class="subtitle">线性代数助手 - 帮助与支持</p>
+        
+        <h2>📱 关于应用</h2>
+        <p>线性代数助手是一款专业的数学计算与可视化工具，专为学生、工程师和数学爱好者设计。应用采用原生 SwiftUI 开发，提供流畅的用户体验和强大的计算能力。</p>
+        
+        <div class="version-info">
+            <strong>当前版本：</strong>1.0.0<br>
+            <strong>支持系统：</strong>iOS 15.6 及以上<br>
+            <strong>应用大小：</strong>约 5 MB<br>
+            <strong>开发者：</strong>张哲铭
+        </div>
+        
+        <h2>✨ 核心功能</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>向量运算</h3>
+                <p>支持向量加减、数乘、点积、叉积、模长计算，并提供 2D 可视化展示。</p>
+            </div>
+            <div class="feature-card">
+                <h3>矩阵运算</h3>
+                <p>矩阵加减乘、转置、迹、幂次运算，支持 2x2 矩阵变换可视化。</p>
+            </div>
+            <div class="feature-card">
+                <h3>行列式</h3>
+                <p>计算行列式值，并通过几何图形展示行列式的面积/体积意义。</p>
+            </div>
+            <div class="feature-card">
+                <h3>逆矩阵</h3>
+                <p>快速求解矩阵的逆，自动检测矩阵是否可逆。</p>
+            </div>
+            <div class="feature-card">
+                <h3>线性方程组</h3>
+                <p>求解 2-3 元线性方程组，2 元方程组支持图形化展示交点。</p>
+            </div>
+            <div class="feature-card">
+                <h3>特征值</h3>
+                <p>计算 2x2 矩阵的特征值与特征向量。</p>
+            </div>
+        </div>
+        
+        <h2>❓ 常见问题</h2>
+        
+        <div class="faq-item">
+            <h3>Q: 应用需要网络连接吗？</h3>
+            <p>A: 不需要。所有计算均在本地完成，完全离线使用。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 支持哪些维度的向量和矩阵？</h3>
+            <p>A: 向量支持 2-3 维，矩阵支持 2x2 和 3x3。可视化功能仅支持 2 维数据。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 计算结果的精度如何？</h3>
+            <p>A: 应用使用 Swift 的 Double 类型进行计算，精度为双精度浮点数（约 15-17 位有效数字）。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 如何保存计算结果？</h3>
+            <p>A: 当前版本可以通过截图保存结果。未来版本将支持导出功能。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 可视化图形可以缩放吗？</h3>
+            <p>A: 可视化会自动适配视口大小，确保所有元素完整显示。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 应用收集我的数据吗？</h3>
+            <p>A: 完全不收集。所有计算在本地完成，不会上传任何数据。详见<a href="index.html" class="email-link">隐私政策</a>。</p>
+        </div>
+        
+        <h2>🐛 问题反馈</h2>
+        <p>如果您在使用过程中遇到任何问题，或有功能建议，欢迎通过以下方式联系我们：</p>
+        
+        <div class="contact-box">
+            <h3>联系开发者</h3>
+            <p><strong>开发者：</strong>张哲铭</p>
+            <p><strong>邮箱：</strong><a href="mailto:darthm77@163.com" class="email-link">darthm77@163.com</a></p>
+            <p><strong>响应时间：</strong>通常在 3 个工作日内回复</p>
+        </div>
+        
+        <h2>📝 反馈时请提供</h2>
+        <ul>
+            <li>您的 iOS 系统版本</li>
+            <li>应用版本号（设置中查看）</li>
+            <li>问题的详细描述</li>
+            <li>如有崩溃，请提供复现步骤</li>
+            <li>截图（如适用）</li>
+        </ul>
+        
+        <h2>🔄 更新日志</h2>
+        
+        <h3>版本 1.0.0（2026年1月）</h3>
+        <ul>
+            <li>✨ 首次发布</li>
+            <li>✨ 向量运算与 2D 可视化</li>
+            <li>✨ 矩阵运算与变换可视化</li>
+            <li>✨ 行列式几何意义展示</li>
+            <li>✨ 线性方程组求解与图形化</li>
+            <li>✨ 特征值与特征向量计算</li>
+            <li>✨ 极简科技设计风格</li>
+            <li>✨ 完全离线使用</li>
+        </ul>
+        
+        <h2>🎯 未来计划</h2>
+        <ul>
+            <li>支持更高维度的向量和矩阵</li>
+            <li>添加计算历史记录</li>
+            <li>支持导出计算结果</li>
+            <li>3D 可视化功能</li>
+            <li>更多线性代数运算</li>
+            <li>深色模式支持</li>
+        </ul>
+        
+        <h2>📚 使用提示</h2>
+        <ul>
+            <li><strong>输入框导航：</strong>输入完成后按键盘的「return」键自动跳转到下一个输入框</li>
+            <li><strong>重置功能：</strong>每个页面右上角都有「重置」按钮，可快速清空输入</li>
+            <li><strong>可视化开关：</strong>可以关闭可视化以节省屏幕空间</li>
+            <li><strong>结果展示：</strong>可视化会显示最后一次计算的输入和结果关系</li>
+        </ul>
+        
+        <div class="footer">
+            <p>© 2026 线性代数助手 | 版本 1.0.0</p>
+            <p><a href="index.html" class="email-link">隐私政策</a> | 技术支持</p>
+        </div>
+    </div>
+</body>
+</html>
